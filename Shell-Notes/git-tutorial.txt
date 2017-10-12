@@ -1,0 +1,32 @@
+====> 複製remote Project
+$ git clone <url> --branch <branch> <your folder>
+
+====> 忽略驗證
+$ git config --global http.sslVerify false 
+$ git config --system --unset credential.helper
+
+====> 避免輸入username/password
+$ git config --global credential.helper wincred 
+
+
+<操作指令>
+$ git status
+$ git add .
+$ git commit –m “your notes”
+
+====> 出現 If Please tell me who your are, run cmd below:
+$ git config –global user.name <your name>
+$ git config –global user.email <your email>
+
+====> 將本機DEV儲存庫修改紀錄 Push 到遠端origin儲存庫
+$ git push origin DEV
+$ git config –list
+$ git branch
+$ git remote origin <遠端Git連結URL>
+
+
+====> 從遠端儲存庫下載所有最新檔案(不包含merge或rebase)
+$ git fetch --all
+
+====> 將<branch_name>分支重設，同步與目前fetch的遠端儲存庫版本
+$ git reset --hard origin/<branch_name>
