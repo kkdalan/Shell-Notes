@@ -42,3 +42,7 @@ git branch new-branch-to-save-current-commits
 ====> 將遠端修改覆蓋本機修改
 git fetch --all
 git reset --hard origin/master
+
+
+====> Merge分支<branch_name>到目前的分支，但是不commit
+git merge --no-ff --no-commit <branch_name>
