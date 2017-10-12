@@ -30,3 +30,15 @@ $ git fetch --all
 
 ====> 將<branch_name>分支重設，同步與目前fetch的遠端儲存庫版本
 $ git reset --hard origin/<branch_name>
+
+
+### 實用指令 ###
+====> 切換到master
+git checkout master
+
+====> 建立暫存分支保留目前修改紀錄 
+git branch new-branch-to-save-current-commits
+
+====> 將遠端修改覆蓋本機修改
+git fetch --all
+git reset --hard origin/master
